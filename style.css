@@ -1,0 +1,99 @@
+body {
+    border: solid 25px blue; /* Bordure bleue autour du corps */
+    margin: 0px; /* Pas de marges extérieures */
+    display: flex; /* Utilisation de Flexbox pour la disposition */
+}
+
+/**************LOGO*********/
+
+.logo-conteneur-flex {
+    width: 45%; /* Largeur de 45% */
+    font-size: clamp(34px, 5vw, 70px); /* Taille de police adaptable */
+}
+
+/* Styles pour les images dans .photo-fini-conteneur-flex */
+.photo-fini-conteneur-flex img {
+    font-size: clamp(34px, 5vw, 70px); /* Taille de police adaptable */
+    flex-flow: row wrap; /* Alignement en mode flex wrap */
+    display: flex; /* Utilisation de Flexbox */
+    float: left; /* Alignement à gauche */
+}
+
+/* Styles pour .image1-conteneur-flex */
+.image1-conteneur-flex {
+    font-size: clamp(4px, 5vw, 70px); /* Taille de police adaptable */
+}
+
+/* Styles pour les images dans .image1-conteneur-flex */
+.image1-conteneur-flex img {
+    width: 29.67%; /* Largeur de 29.67% pour chaque image */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    justify-content: space-around; /* Espace autour des images */
+    flex-flow: row wrap; /* Alignement en mode flex wrap */
+}
+
+/* Styles pour .image2-conteneur-flex */
+.image2-conteneur-flex {
+    font-size: clamp(34px, 3vw, 7px); /* Taille de police adaptable */
+}
+
+/* Styles pour les images dans .image2-conteneur-flex */
+.image2-conteneur-flex img {
+    width: 46.5%; /* Largeur de 46.5% pour chaque image */
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+    justify-content: space-around; /* Espace autour des images */
+    flex-flow: row wrap; /* Alignement en mode flex wrap */
+}
+
+/*****************TEXTE***********/
+
+.titre {
+    text-align: center; /* Texte centré */
+    margin-top: -5%; /* Marge négative pour déplacer vers le haut */
+    padding-bottom: 0.5%; /* Espace en bas */
+    text-decoration: underline; /* Souligné */
+    line-height: 2em; /* Hauteur de ligne de 2 fois la taille de la police */
+    font-size: clamp(34px, 5vw, 7px); /* Taille de police adaptable */
+}
+
+#menu-conteneur-flex {
+    width: 55vw; /* Largeur de 55% de la largeur de la vue */
+    line-height: 1em; /* Hauteur de ligne de 1 fois la taille de la police */
+    margin: 15px; /* Marge extérieure de 15px */
+    font-size: clamp(34px, 5vw, 7px); /* Taille de police adaptable */
+}
+
+/* Styles pour .titre à l'intérieur de #menu-conteneur-flex */
+#menu-conteneur-flex .titre {
+    font-size: 32px; /* Taille de police de 32px */
+}
+
+/* Styles pour .element-flex à l'intérieur de #menu-conteneur-flex */
+#menu-conteneur-flex .element-flex {
+    font-size: clamp(6px, 3vw, 7px); /* Taille de police adaptable */
+    font-size: 22px; /* Taille de police de 22px */
+    line-height: 2.5em; /* Hauteur de ligne de 2.5 fois la taille de la police */
+}
+
+/* Média query pour les écrans larges (pc-tablette) */
+@media screen and (min-width: 1700px) {
+    .photo-fini-conteneur-flex {
+        width: 100%; /* Largeur de 100% pour .photo-fini-conteneur-flex */
+    }
+}
+
+/* Média query pour les écrans de petite à moyenne taille (portable-tablette) */
+@media screen and (max-width: 1030px) {
+    /* Styles pour le texte dans .titre h1 */
+    .titre h1 {
+        font-size: 22px; /* Taille de police de 22px */
+        line-height: 1em; /* Hauteur de ligne de 1 fois la taille de la police */
+    }
+
+    /* Styles pour les éléments dans .element-flex ol */
+    .element-flex ol {
+        font-size: 12px; /* Taille de police de 12px */
+        line-height: 2em; /* Hauteur de ligne de 2 fois la taille de la police */
+        display: inline; /* Affichage en ligne */
+    }
+}
